@@ -1,210 +1,78 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="author" content="Chris Mills" />
-        <meta
-            name="description"
-            content="The MDN Web Docs Learning Area aims to provide complete beginners to the web with al they need to know to get started with developing web sites and applications."
-        />
+<html lang="en">
 
-        <!-- Open Graph Data | For Facebook -->
-        <meta
-            property="og:image"
-            content="https://developer.mozilla.org/static/img/opengraph-logo.png"
-        />
-        <meta
-            property="og:description"
-            content="The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and HTML5 Apps. It also documents Mozilla products, like Firefox OS."
-        />
-        <meta property="og:title" content="Mozilla Developer Network" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://developer.mozilla.org" />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
 
-        <!-- Twitter Card (this also uses Open Graph Data as fallback) -->
-        <meta name="twitter:card" content="summary" />
-        <!-- summary_large_image, player, app -->
-        <meta name="twitter:site" content="@nytimesbits" />
-        <meta name="twitter:creator" content="@nickbilton" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css">
 
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Birdwatching</title>
 
-        <title>MDN | Introduction To HTML</title>
-    </head>
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+</head>
 
-    <body>
-        <h1>Learn HTML</h1>
-        <!-- Creating Hyperlinks -->
-        <section id="creating-hyperlinks">
-            <h2>Creating Hyperlinks</h2>
-            <p><a href="https://firefox.com">Download Firefox</a></p>
+<body>
+    <header>
+        <h1>Birdwatching</h1>
+        <img src="images/dove.png" alt="a simple dove logo" />
+        <nav>
+            <ul>
+                <li><span>Home</span></li>
+                <li><a href="#">Get started</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Gear</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome</h2>
             <p>
-                <a href="https://example.com/report.pdf"
-                    >Download Report (PDF)</a
-                >
+                Welcome to our fake birdwatching site. If this were a real site, it
+                would be the ideal place to come to learn more about birdwatching,
+                whether you are a beginner looking to learn how to get into birding,
+                or an expert wanting to share ideas, tips, and photos with other
+                like-minded people.
             </p>
             <p>
-                <a
-                    href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
-                    download="firefox-latest-64bit-installer.exe"
-                >
-                    Download Latest Firefox for Windows
-                </a>
-            </p>
-            <p>
-                <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
-            </p>
-            <p>
-                <a
-                    href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email"
-                >
-                    Send mail with cc, bcc, subject and body
-                </a>
+                So don't waste time! Get what you need, then turn off that computer
+                and get out into the great outdoors!
             </p>
         </section>
 
-        <!-- Advanced Text Formatting -->
-        <section id="advanced-text-formatting">
-            <h2>Advanced Text Formatting</h2>
-            <h3>Description List</h3>
-            <dl>
-                <dt>Bacon</dt>
-                <dd>The glue that binds the world together.</dd>
-                <dt>Eggs</dt>
-                <dd>The glue that binds the cake together.</dd>
-                <dt>Coffe</dt>
-                <dd>The drink that gets the world running in the morning.</dd>
-                <dd>A light brown color.</dd>
-            </dl>
-            <h3>Quotations</h3>
-            <h4>Blockquotes</h4>
-            <blockquote
-                cite="https://developer.mozilla.org/en-US/doccs/Web/HTML/Element/blockquote"
-            >
-                <p>
-                    The
-                    <strong
-                        >HTML <code>&lt;blockquote&gt;</code> Element</strong
-                    >
-                    (or <em>HTML Block Quotation Element</em>) indicates that
-                    the enclosed text is an extended quotation.
-                </p>
-            </blockquote>
-            <h4>Inline Blockquote</h4>
-            <p>The quote element - <code>&lt;q&gt;</code></p>
-            - is
-            <q
-                cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
-            >
-                intended for short quotations that don't require paragraph
-                breaks.
-            </q>
-            <h4>Citations</h4>
-            <p>
-                According to the
-                <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
-                >
-                    <cite>MDN blockquote page</cite> </a
-                >:
-            </p>
-            <blockquote>
-                <p>
-                    The
-                    <strong
-                        >HTML <code>&lt;blockquote&gt;</code> Element</strong
-                    >
-                    (or <em>HTML Block Quotation Element</em>) indicated that
-                    the enclosed text is an extended quotation.
-                </p>
-            </blockquote>
-            <p>
-                The quote element - <code>&lt;q&gt;</code> - is
-                <q
-                    cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
-                    >intended for short quotations that don't require paragraph
-                    breaks.</q
-                >
-                --
-                <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
-                    ><cite>MDN q page</cite></a
-                >.
-            </p>
-            <h3>Abbreviations</h3>
-            <p>
-                We use <abbr title="Hypertext Markup Language">HTML</abbr> to
-                structure our web documents.
-            </p>
-            <p>
-                I think <abbr title="Reverend">Rev.</abbr> Green did it in the
-                kitchen with the chainsaw.
-            </p>
-            <h3>Marking up contact details</h3>
-            <address>
-                <p>Chris Mills, Manchester, The Grim North, UK</p>
-                <ul>
-                    <li>Tel: 01234567890</li>
-                    <li>Email: me@grim-north.co.uk</li>
-                </ul>
-            </address>
-            <h3>Superscript and Subscript</h3>
-            <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
-            <p>
-                Caffeine's chemical formula is
-                C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
-            </p>
-            <p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
-            <h3>Representing computer code</h3>
-            <pre>
-var para = document.qureySelector('p');
-para.onClick = function() {
-    alert('Owww, stop poking me!');
-}
-            </pre>
-            <p>
-                You shouldn't use presentational elements like
-                <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.
-            </p>
-            <p>
-                In the above Javascript example, <var>para</var> represents a
-                paragraph element.
-            </p>
-            <p>
-                Select all text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> +
-                <kbd>A</kbd>.
-            </p>
-            <pre>
-$ <kbd>ping mozilla.org</kbd>
-<smap>
-PING mozilla.org (63.245.215.20): 56 data bytes
-64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms
-</smap>
-            </pre>
-            <h3>Marking up times and dates</h3>
-            <p>
-                <time datetime="2021-06-11">June 11, 2021</time>
-            </p>
-            <p>
-                <time datetime="2021-06-11T18:26+06:00">
-                    06:26 PM June 11, 2021
-                </time>
-            </p>
-            <p>
-                <time datetime="2021-06">June 2021</time>
-            </p>
-            <p>
-                <time datetime="06-11">11<sup>th</sup> June</time>
-            </p>
-            <p>
-                <time datetime="18:26">06:26 PM</time>
-            </p>
-            <p>
-                <time datetime="18:26:36.034">06:26:36.034 PM</time>
-            </p>
-            <p>
-                <time datetime="2021-W02">Second week of 2021</time>
-            </p>
-        </section>
-    </body>
+        <aside>
+            <h2>Favourite photos</h2>
+            <a href="images/favorite-1.jpg"> <img src="images/favorite-1_th.jpg"
+                    alt="Small black bird, black claws, long black slender beak, links to larger version of the image" />
+            </a>
+            <a href="images/favorite-2.jpg"> <img src="images/favorite-2_th.jpg"
+                    alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image" />
+            </a>
+            <a href="images/favorite-3.jpg"> <img src="images/favorite-3_th.jpg"
+                    alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image" />
+            </a>
+            <a href="images/favorite-4.jpg"> <img src="images/favorite-4_th.jpg"
+                    alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image" />
+            </a>
+        </aside>
+    </main>
+    <footer>
+        <p>
+            This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example
+            written by Chris Mills, 2016.
+        </p>
+        <p>
+            <a href="http://game-icons.net/lorc/originals/dove.html">Dove icon </a> by Lorc.
+        </p>
+    </footer>
+</body>
+
 </html>
